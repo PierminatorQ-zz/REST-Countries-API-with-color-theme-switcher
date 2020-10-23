@@ -1,0 +1,11 @@
+:root {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hl {
+  background-color: yellow;
+}
+/*# sourceMappingURL=styles.css.map */
