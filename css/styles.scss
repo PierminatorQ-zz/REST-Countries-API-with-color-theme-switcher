@@ -21,7 +21,36 @@ body{
   background-color: $VeryLightGray;
   font-family: $Nunito;
   font-size: 14px;
+  color: $VeryDarkBlue;
 }
+
+.dark-mode{
+  background-color: $VeryDarkBlue;
+}
+
+.light-dark-mode{
+  background-color: $DarkBlue !important;
+  color:$White !important ;
+}
+
+.light-dark-btn{
+  color:$White !important ;
+  &:hover {
+    text-decoration: none;
+    color:$DarkGray ;
+  }
+}
+
+.dark-button{
+  color:$VeryDarkBlue;
+
+  &:hover {
+    text-decoration: none;
+    color:indigo;
+  }
+
+}
+
 
 .navbar-brand{
   font-size:20px;

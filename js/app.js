@@ -26,8 +26,6 @@ $(document).ready(function () {
       $('.flags').html('')
       selectRegion(selected)
       
-
-
     });
 
 
@@ -37,6 +35,17 @@ $(document).ready(function () {
         let data = event.target.alt
         showCountry(data)
         
+    })
+
+    $('#dark-toogle').click(function(){
+      $("body").toggleClass("dark-mode")
+      $('.navbar').toggleClass("light-dark-mode")
+      $('.navbar-brand').toggleClass("light-dark-mode")
+      $('.search').toggleClass("light-dark-mode")
+      $('.selected').toggleClass("light-dark-mode")
+      $('.card').toggleClass("light-dark-mode")
+      $('.modal-content').toggleClass("light-dark-mode")
+      $('.dark-button').toggleClass("light-dark-btn")
     })
 
 });

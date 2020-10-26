@@ -6,7 +6,27 @@
 body {
   background-color: #fafafa;
   font-family: "Nunito Sans", sans-serif;
-  font-size: 14px; }
+  font-size: 14px;
+  color: #111517; }
+
+.dark-mode {
+  background-color: #111517; }
+
+.light-dark-mode {
+  background-color: #2b3945 !important;
+  color: white !important; }
+
+.light-dark-btn {
+  color: white !important; }
+  .light-dark-btn:hover {
+    text-decoration: none;
+    color: #858585; }
+
+.dark-button {
+  color: #111517; }
+  .dark-button:hover {
+    text-decoration: none;
+    color: indigo; }
 
 .navbar-brand {
   font-size: 20px;
