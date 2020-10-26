@@ -1,14 +1,90 @@
+$DarkBlue: hsl(209, 23%, 22%);
+$VeryDarkBlue : hsl(207, 26%, 17%);
+$VeryDarkBlue : hsl(200, 15%, 8%);
+$DarkGray : hsl(0, 0%, 52%);
+$VeryLightGray: hsl(0, 0%, 98%);
+$White: hsl(0, 0%, 100%);
+$Nunito:  'Nunito Sans', sans-serif;
+
+
+
+
 :root {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   
+  
 }
 
 body{
-  
+  background-color: $VeryLightGray;
+  font-family: $Nunito;
+  font-size: 14px;
+}
+
+.navbar-brand{
+  font-size:20px;
+  font-weight: 800;
+}
+
+input{
+border-color: $DarkGray;
 }
 
 .hl{
   background-color: yellow;
+}
+
+
+
+.card-title{
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.card-text{
+  margin-bottom:5px;
+}
+
+.card-img-top{
+  height: 170px;
+}
+
+
+/*modal styles*/
+
+.modal-content{
+  background-color: $VeryLightGray;
+  font-size: 14px;
+  
+}
+
+.modal-body {
+  padding: 100px 10px;
+}
+
+.modal-title{
+  font-weight: 800;
+}
+
+#contentModal{
+  padding-left:80px;
+}
+
+#nombreModal{
+  font-weight: 800;
+  padding: 25px 0;
+}
+
+.itemModal{
+  display:flex;
+  align-items: baseline;
+}
+
+.h5-modal{
+  font-weight: 800;
+  font-size: 16px;
+  margin-right:5px;
 }

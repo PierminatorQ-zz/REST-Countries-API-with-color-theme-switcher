@@ -3,42 +3,41 @@ $(document).ready(function () {
   getCountries(url_all)
 
 
-const search = $('.search')
-const suggestions = $('.suggestions');
+  const search = $('.search')
+  const suggestions = $('.suggestions');
 
-search.on('input', function(e){
-    suggestions.html('')
-    $('.flags').html('')
-    displayMatches(e, suggestions);
-
-
-});
-
-search.focusout('input', function(){
-  suggestions.html('')
-});
+    search.on('input', function(e){
+        suggestions.html('')
+        $('.flags').html('')
+        displayMatches(e, suggestions);
 
 
+    });
 
-$('#filter-region').on('input', function(){
-  
-  selected = $('#filter-region').val()
-  $('.flags').html('')
-  selectRegion(selected)
-  
+    search.focusout('input', function(){
+      suggestions.html('')
+    });
 
 
-});
+
+    $('#filter-region').on('input', function(){
+      
+      selected = $('#filter-region').val()
+      $('.flags').html('')
+      selectRegion(selected)
+      
 
 
-$('#flagis').click(function(event){ 
-  
-    let data = event.target.alt
-    showCountry(data)
-    
-})
+    });
 
 
+    $('#flagis').click(function(event){ 
+      $('#imageModal').html("")
+      $('#borderModal').html("")
+        let data = event.target.alt
+        showCountry(data)
+        
+    })
 
 });
 
@@ -48,14 +47,13 @@ function getCountries(url){
 
             fetch(url)
                       .then(function(response){
-                        
                         return response.json()
                       })
                       .then(function(data){
                         countries.push(...data);
                         printCountries(data);
                       })
-                      
+                                               
 }
 
 
@@ -87,12 +85,9 @@ function selectRegion(region){
 function showCountry(country){
   
   const countrySpecific = countries.filter(info => info.name === country )
-  
   const pais= countrySpecific[0]
   printModal(pais)
-  //console.log(countrySpecific[0])
-  
-  
+    
 }
 
 

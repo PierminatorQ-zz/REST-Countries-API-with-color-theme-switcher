@@ -5,18 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <title>Document</title>
+  <title>Where in the World</title>
 </head>
 <body>
-<div class="container" id="content-general">
-    <h1>titulo</h1>
-    <div id="content-flags">
-    <input type="search" class="search">
 
+  <nav class="navbar navbar-expand-lg shadow-sm navbar-light bg-light">
+    <div class="container">
+    <a class="navbar-brand" href="#">Where in the World</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control-sm mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
+      </form>
+    </div>
+  </div>
+  </nav>
+
+<div class="container" id="content-general">
     
-      <select name="select" id="filter-region">
-        <option value="no-region">Selecciona una region</option>
+    <div id="content-flags">
+        
+      <select class="custom-select custom-select-sm my-5" name="select" id="filter-region">
+        <option value="no-region">Select a region</option>
         <option value="Americas">America</option> 
         <option value="Asia">Asia</option>
         <option value="Africa">Africa</option>
